@@ -1,15 +1,13 @@
-<script setup></script>
-
 <template>
-  <div>
-    <div class="background-image">
+  <div class="background-image">
+    <div class="centered-element">
       <h1>PR Guild</h1>
       <p class="hero-paragraph">
-        A guild where you can learn Github Post Request through bounty.
+        A guild where you can learn Github Pull Request through bounty.
       </p>
-      <div class="hero-cta">
-        <a href="#">Count me In</a>
-      </div>
+      <!-- <div class="d-flex justify-center hero-cta"> -->
+      <v-btn class="bg-purple-darken-2 text-center"> Count Me In </v-btn>
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -17,7 +15,7 @@
 <style scoped>
 @font-face {
   font-family: "Galiver Sans";
-  src: url("/public/fonts/GaliverSans-Bold.woff2") format("woff2");
+  src: url("/fonts/GaliverSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,14 +35,6 @@ p {
   text-align: center;
   color: white;
 }
-.hero-cta {
-  width: 50%; /* A width is required */
-  margin: 0 auto;
-  text-align: center;
-}
-a {
-  color: aliceblue;
-}
 
 .background-image {
   position: absolute;
@@ -52,12 +42,15 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Use direct path if in /public folder */
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5)), url("/src/assets/homepage-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1; /* Place behind content */
+    linear-gradient(rgba(0, 0, 0, 0.3)), url("/src/assets/homepage-bg.jpg");
+}
+
+.centered-element {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 </style>

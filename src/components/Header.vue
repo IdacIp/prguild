@@ -16,12 +16,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "VueHeader",
-};
-</script>
-
 <style scoped>
 @font-face {
   font-family: "Galiver Sans";
