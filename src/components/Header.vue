@@ -1,3 +1,7 @@
+<script>
+import router from '../router';
+</script>
+
 <template>
   <header class="header">
     <div class="header-container">
@@ -10,6 +14,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </nav>
     </div>
@@ -19,7 +24,7 @@
 <style scoped>
 @font-face {
   font-family: "Galiver Sans";
-  src: url("/public/fonts/GaliverSans-Bold.woff2") format("woff2");
+  src: url("/fonts/GaliverSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,6 +35,7 @@ h1 {
   font-size: 200px;
   text-shadow: 20%;
 }
+
 .header {
   background-color: rgba(255, 255, 255, 0);
   padding: 1rem 0;
