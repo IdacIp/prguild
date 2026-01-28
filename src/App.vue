@@ -11,7 +11,6 @@ export default {
 </script>
 
 <template>
-  <router-view></router-view>
   <Header class="header-fixed" />
   <router-view />
   <Footer />
@@ -26,5 +25,4 @@ export default {
   z-index: 100;
   width: 100%;
 }
-
 </style>
